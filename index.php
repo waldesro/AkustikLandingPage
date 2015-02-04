@@ -7,11 +7,20 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Akustik</title>
+        
+        <style>
+            @import "css/base.css";
+            @import "css/navbar.css";
+        </style>
+        <link rel="icon" href="img/logo_caracol.png" type="image/png"/>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        
+        <div id="wrap">
+            <?php
+            include_once 'include/navbar.php';
+            ?>
+        </div>
     </body>
 </html>
