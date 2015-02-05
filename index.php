@@ -15,12 +15,15 @@ and open the template in the editor.
         </style>
         <link rel="icon" href="img/logo_caracol.png" type="image/png"/>
     </head>
-    <body>
-        
+    <body>      
         <div id="wrap">
             <?php
             include_once 'include/navbar.php';
             ?>
+            <div class="separador"></div>
+            <div id="viewer">
+                
+            </div>
         </div>
     </body>
 </html>
