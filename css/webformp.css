@@ -1,0 +1,80 @@
+.informacion {
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888888;
+    background: linear-gradient(#1E90FF 20%, #f6f6f6 80%);
+    width: 50%;
+    height: 400px;  
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    padding: 20px;
+    float: left;
+    position: relative;
+}
+
+.contacto {
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888888;
+    background: linear-gradient(#f6f6f6 20%, #1E90FF 100%);
+    width: 50%;
+    height: 180px;  
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.contacto > h1 {
+    color: white;
+}
+
+.contacto > h4 {
+    color: #1E90FF;
+}
+
+.contacto > img {
+    width: 35px; 
+    height: 35px;
+    position: absolute;
+}
+
+#cr {
+    top: 65px;
+    left: 20px;
+}
+
+#ni {
+    top: 120px;
+    left: 20px;
+}
+.informacion > label {
+    color: white;
+    display: inline-block;
+    width: 75px;
+}
+
+.informacion > input {
+    width:100%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.informacion > p {
+    color: #1E90FF;
+    text-justify: auto;
+}
+
+.informacion > textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.informacion > button {
+    position: absolute;
+    top: 360px;
+    right: 30px;
+}
