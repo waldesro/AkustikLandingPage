@@ -1,22 +1,57 @@
 <div class="webform">
-    <div class="informacion">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" />
-        <label for="telefono">Teléfono</label>
-        <input type="text" id="telefono" name="telefono"/>
-        <label for="correo">Correo</label>
-        <input type="text" id="correo" name="correo"/>
-        <label for="consulta">Consulta</label>
-        <textarea id="consulta" name="Consulta"/>
-        <p>Ingresando los datos, usted acepta que Akustik y 
-            sus asociados de negocios, le envien información sobre productos y servicios </p>
-        <button id="enviar">Enviar</button>
+    <div>
+        <form class="informacion" id=informacion" name="informacion" method="post" action="">
+            <!-- Nombre -->
+            <div>
+                <label for="nombre">Nombre</label>
+                <span class="error">*Ingrese un nombre</span>
+                <input type="text" id="nombre" name="nombre" required="required"/>             
+            </div>
+            <!-- Telefono -->
+            <div>
+                <label for="telefono">Teléfono</label>
+                <span class="error">*Debe ingresar un teléfono</span>
+                <input type="telephone" id="telefono" name="telefono" placeholder="5555-5555" pattern="\d{4}-?\d{4}" required="required"/>
+                
+            </div>
+            <!-- Correo -->
+            <div>
+                <label for="correo">Correo</label>
+                <span class="error">*Debe ingresar un correo válido</span>
+                <input type="email" id="correo" name="correo" required="required"/>
+            </div>
+            <!-- Consulta -->
+            <div>
+                <label for="consulta">Consulta</label>
+                <textarea id="consulta" name="Consulta"/>
+            </div>
+            <div>
+                <p>Ingresando los datos, usted acepta que Akustik y sus asociados de negocios, le envien información sobre productos y servicios </p>
+            </div>
+            <div id="informacion_submit">  
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
     </div>
     <div class="contacto">
-        <h4>Comuniquese con nosotros</h4>
-        <img id="cr" title="Costa Rica" src="img/Costa-Rica.png">
-        <h1> +(506) 4100-4130 </h1>
-        <img id="ni" title="Nicaragua" src="img/Nicaragua.png">
-        <h1> +(505) 2277-2557 </h1>
+        <p id="contacto_titulo">Comuniquese con nosotros</p>
+        <table class="contact_table"> 
+            <tr>
+                <td class="col_flag">
+                    <img class="contact_flag" src="img/Costa-Rica.png" alt="Costa Rica">
+                </td>
+                <td class="col_telefono">
+                    <p class="contact_telefono"> +(506) 4100-4130 </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="col_flag">
+                    <img class="contact_flag" src="img/Nicaragua.png" alt="Nicaragua">
+                </td>
+                <td class="col_telefono">
+                    <p class="contact_telefono"> +(505) 2277-2557 </p>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>

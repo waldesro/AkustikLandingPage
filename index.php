@@ -12,21 +12,22 @@ and open the template in the editor.
         <script src="js/utiles.js"></script>
         <style>
             @import "css/base.css";
-            @import "css/navbar.css";              
+            @import "css/navbar.css";  
         </style>      
         <link rel="icon" href="img/logo_caracol.png" type="image/png"/>
     </head>
     <body>      
         <div id="wrap">
             <?php
-                include_once 'include/navbar.php';
-            ?>
-            <div class="separador"></div>
+            include_once 'include/navbar.php';
+            ?>           
             <div id="viewer">
                 <?php
-                    include_once 'main.php';
+                include_once 'main.php';
                 ?>
             </div>
         </div>
-    </body>
+    </div>
+
+</body>
 </html>

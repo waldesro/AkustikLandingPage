@@ -1,10 +1,14 @@
+.webform {
+    min-width: 200px;
+}
+
 .informacion {
     text-align: left;
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px #888888;
-    background: linear-gradient(#1E90FF 20%, #f6f6f6 80%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #888888;
+    background: linear-gradient(black 20%, #D8D8D8 80%);
     width: 50%;
-    height: 400px;  
+    height: 100%;  
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 10px;
@@ -15,47 +19,62 @@
 
 .contacto {
     text-align: left;
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px #888888;
-    background: linear-gradient(#f6f6f6 20%, #1E90FF 100%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #888888;
+    //background: linear-gradient(#f6f6f6 20%, #D8D8D8 80%);
     width: 50%;
-    height: 180px;  
+    height: 100%;  
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 5px;
+    padding: 5px;
     float: left;
     position: relative;
     text-align: center;
 }
 
-.contacto > h1 {
-    color: white;
-}
-
-.contacto > h4 {
+#contacto_titulo {
     color: #1E90FF;
+    font-size: 24px;
+    text-decoration:none;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
-.contacto > img {
-    width: 35px; 
-    height: 35px;
-    position: absolute;
+.contact_table {
+    width: 100%;
+    height: 50px;
 }
 
-#cr {
-    top: 65px;
-    left: 20px;
+.contact_telefono {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
 }
 
-#ni {
-    top: 120px;
-    left: 20px;
+.col_flag {
+    width: 30%;
+    height: 20px;
+    vertical-align: central;
 }
+
+.col_telefono {
+    width: 70%;
+    height: 20px;
+}
+
+.contact_flag {
+    max-width: 30%;
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
 .informacion > label {
     color: white;
     display: inline-block;
-    width: 75px;
+    width: 55px;
 }
 
 .informacion > input {
@@ -65,16 +84,41 @@
 }
 .informacion > p {
     color: #1E90FF;
-    text-justify: auto;
+    text-align: justify;
 }
 
 .informacion > textarea {
     width: 100%;
     height: 100px;
+    vertical-align: top;
 }
 
 .informacion > button {
-    position: absolute;
-    top: 360px;
-    right: 30px;
+    position: relative;
+    //left: 85%;
+    float: bottom;
+    //padding-right: 10px;
+}
+
+.informacion > div{
+    margin-top: 5px;
+    width: 100%;
+}
+
+input.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+ 
+input.valid, textarea.valid{
+    border: 2px solid green;
+}
+
+.error{
+    display: none;
+    margin-left: 10px;
+}      
+ 
+.error_show{
+    color: red;
+    margin-left: 10px;
 }
