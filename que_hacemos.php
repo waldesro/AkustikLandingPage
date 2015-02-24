@@ -97,22 +97,22 @@
                                 <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
                             </a>
                         </li>
-
                         <li>
-                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/auditioner_playback_system/page.html')" data-largesrc="img/hacemos/modelaje/02.jpg" data-title="Bose Auditioner®" data-description='Bose Auditioner system technology permite al diseñador del sistema, consultor acústico y cliente, "pasear dentro" del modelo y experimentar con precisión el rendimiento del sistema de sonido propuesto. El sistema de reproducción Auditioner patentado, utiliza una disposición específica de los altavoces de campo cercano y procesamiento de señales patentado, para ofrecer con precision ondas de sonido a los oídos de los oyentes, por lo que se puede escuchar el sonido como lo harían en el lugar real. Tecnología Auditioner está habilitado con el software Bose® Modeler® Plus.'>
-                                <img src="img/hacemos/modelaje/02.jpg" alt="Bose Auditioner®"/>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/02.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/02.jpg" alt="Bose Modeler®"/>
                             </a>
                         </li>
                         <li>
-                            <a href="img/hacemos/modelaje/03.jpg" data-largesrc="img/hacemos/modelaje/03.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                                <img src="img/hacemos/modelaje/03.jpg" alt="Modeler"/>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/auditioner_playback_system/page.html')" data-largesrc="img/hacemos/modelaje/03.jpg" data-title="Bose Auditioner®" data-description='Bose Auditioner system technology permite al diseñador del sistema, consultor acústico y cliente, "pasear dentro" del modelo y experimentar con precisión el rendimiento del sistema de sonido propuesto. El sistema de reproducción Auditioner patentado, utiliza una disposición específica de los altavoces de campo cercano y procesamiento de señales patentado, para ofrecer con precision ondas de sonido a los oídos de los oyentes, por lo que se puede escuchar el sonido como lo harían en el lugar real. Tecnología Auditioner está habilitado con el software Bose® Modeler® Plus.'>
+                                <img src="img/hacemos/modelaje/03.jpg" alt="Bose Auditioner®"/>
                             </a>
                         </li>
                         <li>
-                            <a href="img/hacemos/modelaje/04.jpg" data-largesrc="img/hacemos/modelaje/04.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                                <img src="img/hacemos/modelaje/04.jpg" alt="Modeler"/>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/auditioner_playback_system/page.html')" data-largesrc="img/hacemos/modelaje/04.jpg" data-title="Bose Auditioner®" data-description='Bose Auditioner system technology permite al diseñador del sistema, consultor acústico y cliente, "pasear dentro" del modelo y experimentar con precisión el rendimiento del sistema de sonido propuesto. El sistema de reproducción Auditioner patentado, utiliza una disposición específica de los altavoces de campo cercano y procesamiento de señales patentado, para ofrecer con precision ondas de sonido a los oídos de los oyentes, por lo que se puede escuchar el sonido como lo harían en el lugar real. Tecnología Auditioner está habilitado con el software Bose® Modeler® Plus.'>
+                                <img src="img/hacemos/modelaje/04.jpg" alt="Bose Auditioner®"/>
                             </a>
                         </li>
+                        
                         <li>
                             <a href="img/hacemos/modelaje/05.jpg" data-largesrc="img/hacemos/modelaje/05.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
                                 <img src="img/hacemos/modelaje/05.jpg" alt="Modeler"/>
