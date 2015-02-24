@@ -53,3 +53,12 @@ function mostrar_contenido(contenedor, url) {
         $(contenedor).show("drop", {direction: "center", times: 6, distance: 400, mode: "show"}, 200);
     }
 }
+
+function open_win(url_sistema, standard) {
+    if (standard) {
+        window.open(url_sistema, "_blank", "toolbar=no,location=no, directories=no, status=no, menubar=no, scrollbars=yes, fullscreen=yes, resizable=yes, copyhistory=no");
+    }
+    else {
+        window.open(url_sistema, "_blank", "toolbar=yes,location=yes, directories=yes, status=yes, menubar=yes, scrollbars=yes, fullscreen=yes, resizable=yes, copyhistory=yes");
+    }
+}

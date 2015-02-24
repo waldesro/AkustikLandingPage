@@ -1,29 +1,140 @@
 <html>
     <head>
         <title>Que Hacemos</title>
+        <style>
+            @import "css/jquery-ui-1.10.4.custom.min.css";
+            @import "css/base.css";
+            @import "css/component.css";
+        </style>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/grid.js"></script>
+        <script>
+            $(function () {
+                $("#accordion").accordion({
+                    event: "click hoverintent",
+                    heightStyle: "content"
+                });
+                Grid.init();
+            });
+            $.event.special.hoverintent = {
+                setup: function () {
+                    $(this).bind("mouseover", jQuery.event.special.hoverintent.handler);
+                },
+                teardown: function () {
+                    $(this).unbind("mouseover", jQuery.event.special.hoverintent.handler);
+                },
+                handler: function (event) {
+                    var currentX, currentY, timeout,
+                            args = arguments,
+                            target = $(event.target),
+                            previousX = event.pageX,
+                            previousY = event.pageY;
+
+                    function track(event) {
+                        currentX = event.pageX;
+                        currentY = event.pageY;
+                    }
+                    ;
+
+                    function clear() {
+                        target
+                                .unbind("mousemove", track)
+                                .unbind("mouseout", clear);
+                        clearTimeout(timeout);
+                    }
+
+                    function handler() {
+                        var prop,
+                                orig = event;
+
+                        if ((Math.abs(previousX - currentX) +
+                                Math.abs(previousY - currentY)) < 7) {
+                            clear();
+
+                            event = $.Event("hoverintent");
+                            for (prop in orig) {
+                                if (!(prop in event)) {
+                                    event[ prop ] = orig[ prop ];
+                                }
+                            }
+                            // Prevent accessing the original event since the new event
+                            // is fired asynchronously and the old event is no longer
+                            // usable (#6028)
+                            delete event.originalEvent;
+
+                            target.trigger(event);
+                        } else {
+                            previousX = currentX;
+                            previousY = currentY;
+                            timeout = setTimeout(handler, 100);
+                        }
+                    }
+
+                    timeout = setTimeout(handler, 100);
+                    target.bind({
+                        mousemove: track,
+                        mouseout: clear
+                    });
+                }
+            };
+        </script>
     </head>
     <body>
-        <div id="Ingenieria">
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/levantamiento.jpg">
-                </div>
-                <p class="title">LEVANTAMIENTO / MODELAJES ACÚSTICOS:</p> 
-                <p class="text">
+        <div id="accordion">
+            <h3 class="s1">Levantamiento / Modelaje Acústicos</h3>
+            <div class="text-accordion">
+                <p>
                     Nuestro departamento de Integración de Audio y Video, recopila la información suficiente para realizar una simulación del 
                     recinto y con la ayuda de la exclusiva herramienta de diseño acústico Modeler® de BOSE se determinar la configuración y 
                     ubicación ideal de los equipos y altavoces; previendo así que se reduzcan ecos indeseados, excesiva reverberación y espacios 
                     con caídas de sonido. 
                 </p>
+                <div class="main">
+                    <ul id="og-grid" class="og-grid">
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/auditioner_playback_system/page.html')" data-largesrc="img/hacemos/modelaje/02.jpg" data-title="Bose Auditioner®" data-description='Bose Auditioner system technology permite al diseñador del sistema, consultor acústico y cliente, "pasear dentro" del modelo y experimentar con precisión el rendimiento del sistema de sonido propuesto. El sistema de reproducción Auditioner patentado, utiliza una disposición específica de los altavoces de campo cercano y procesamiento de señales patentado, para ofrecer con precision ondas de sonido a los oídos de los oyentes, por lo que se puede escuchar el sonido como lo harían en el lugar real. Tecnología Auditioner está habilitado con el software Bose® Modeler® Plus.'>
+                                <img src="img/hacemos/modelaje/02.jpg" alt="Bose Auditioner®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/hacemos/modelaje/03.jpg" data-largesrc="img/hacemos/modelaje/03.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                                <img src="img/hacemos/modelaje/03.jpg" alt="Modeler"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/hacemos/modelaje/04.jpg" data-largesrc="img/hacemos/modelaje/04.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                                <img src="img/hacemos/modelaje/04.jpg" alt="Modeler"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/hacemos/modelaje/05.jpg" data-largesrc="img/hacemos/modelaje/05.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                                <img src="img/hacemos/modelaje/05.jpg" alt="Modeler"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/hacemos/modelaje/06.jpg" data-largesrc="img/hacemos/modelaje/06.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                                <img src="img/hacemos/modelaje/06.jpg" alt="Modeler"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/hacemos/modelaje/07.jpg" data-largesrc="img/hacemos/modelaje/07.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                                <img src="img/hacemos/modelaje/07.jpg" alt="Modeler"/>
+                            </a>
+                        </li>                      
+                    </ul>
+                </div>
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/altavoces.jpg">
-                </div>
-                <p class="title">ALTAVOCES Y SISTEMAS LINEALES: </p> 
-                <p class="text">
+            <h3 class="s2">Altavoces y Sistemas Lineales</h3>
+            <div class="text-accordion">
+                <p>
                     La mejor alternativa para lugares con acústica incontrolables como lo son iglesias,
                     estos sistemas permiten un resultado sorprendentemente eficaz, que reproduce la voz
                     de forma clara e inteligible. 
@@ -31,12 +142,9 @@
 
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/microfonia.jpg">
-                </div>
-                <p class="title">MICROFONÍA Y SISTEMAS DE VOTACIÓN: </p> 
-                <p class="text">
+            <h3 class="s3">Microfonía y Sistemas de Votación</h3>
+            <div class="text-accordion">
+                <p>
                     De acuerdo a la necesidad  del cliente ofrecemos la línea de microfonía adecuada para asegurar la calidad y 
                     confiabilidad en la voz.</br>
                     Utilizamos sistemas de votación con opciones de hardware y software integrales, potentes, escalables y flexibles
@@ -46,38 +154,28 @@
 
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/video.jpg">
-                </div>
-                <p class="title">SISTEMAS DE VIDEO CONFERENCIA:</p> 
-                <p class="text">
+            <h3 class="s4">Sistemas de Video Conferencia</h3>
+            <div class="text-accordion">
+                <p>
                     Los sistemas de videoconferencia y su aplicación, ha sido un reto que hemos asumido en los últimos años para brindar 
                     a nuestros clientes soluciones de alta calidad de la mano de marcas reconocidas a nivel mundial, dando respaldo y garantía.
                 </p>
 
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/procesamiento.jpg">
-                </div>
-                <p class="title">PROCESAMIENTO Y AUTOMATIZACIÓN DE SONIDO:</p> 
-                <p class="text">
+            <h3 class="s5">Procesamiento y Automatización de Sonido</h3>
+            <div class="text-accordion">
+                <p>
                     La tecnología está en constante avance, y el audio no se escapa de eso!</br>
                     Por lo que sistemas programados mediante red en cualquier lugar, acceso controlado al  equipo, estética, 
                     ahorro de espacio, son algunos de los beneficios de los sistemas de procesamiento y automatización, simplificando su 
                     uso y haciendo que el usuario pueda utilizarlo sin inconveniente después de una breve explicación. 
                 </p>
-
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/voceo.jpg">
-                </div>
-                <p class="title">SISTEMAS DE VOCEO Y EMERGENCIAS: </p> 
-                <p class="text">
+            <h3 class="s6">Sistemas de Voceo y Evacuación</h3>
+            <div class="text-accordion">
+                <p>
                     La seguridad no tiene precio! Proporcionar a recintos de cualquier tamaño un sistema de megafonía y evacuación por voz eficiente y flexible, 
                     con la seguridad y confianza que usted necesita, localizar a personas en cualquier lugar del establecimiento, dar indicaciones
                     claras ante cualquier suceso, evacuar de la forma correcta ante cualquier emergencia y mantener la comunicación aún 
@@ -86,12 +184,9 @@
 
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/acusticos.jpg">
-                </div>
-                <p class="title">TRATAMIENTOS ACÚSTICOS:</p> 
-                <p class="text">
+            <h3 class="s7">Tratamientos Acústicos</h3>
+            <div class="text-accordion">
+                <p>           
                     El ruido en algunos lugares ha sido una limitante para aprovechar el espacio, un obstáculo para lograr alcanzar la 
                     satisfacción de quienes lo habitan o bien un reto para los que desean llevar a cabo algún proyecto personal o profesional.</br> 
                     ¡Lo entendemos! Por lo que diseñar soluciones apropiadas de control de sonido para todo tipo de espacios comerciales, 
@@ -101,12 +196,9 @@
 
             </div>
 
-            <div class="teach">
-                <div class="photo">
-                    <img src="img/instalacion.jpg">
-                </div>
-                <p class="title">SERVICIO DE INSTALACIÓN Y MANTENIMIENTO: </p> 
-                <p class="text">
+            <h3 class="s8">Servicio de Instalación y Mantenimiento</h3>
+            <div class="text-accordion">
+                <p>
                     En cada instalación, procuramos dejar nuestra marca de excelencia.</br> 
                     Personal altamente capacitado por nuestras marcas 
                     así como la experiencia de 17 años en diferentes proyectos como gimnasios, colegios, iglesias católicas y cristianas, 

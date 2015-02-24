@@ -48,8 +48,9 @@ body {
 
 #viewer {
     margin-left: 20%;
-    margin-top: 350px;
+    margin-top: 345px;
     margin-right: 20%;
+    max-width: 900px;
     width: 60%;
     height: auto !important;
     background-color: white;
@@ -117,3 +118,35 @@ body {
     padding-right: 40px;
 }
 
+#accordion {
+    padding: 20px;
+}
+
+#accordion div p {
+    text-align: justify;
+}
+
+.ui-accordion-header.s1 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
+.ui-accordion-header.s2 .ui-icon {
+    background: url('../img/altavoces.jpg');
+}
+.ui-accordion-header.s3 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
+.ui-accordion-header.s4 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
+.ui-accordion-header.s5 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
+.ui-accordion-header.s6 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
+.ui-accordion-header.s7 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
+.ui-accordion-header.s8 .ui-icon {
+    background: url('../img/levantamiento.jpg');
+}
