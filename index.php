@@ -26,6 +26,11 @@ and open the template in the editor.
                 include_once 'main.php';
                 ?>
             </div>
+            <div id="footer" class="navbar">
+                <?php
+                include_once 'include/pie_pagina.php';
+                ?>
+            </div>
         </div>
     </div>
 

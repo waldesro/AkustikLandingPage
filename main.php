@@ -6,14 +6,14 @@
         </style>
         <script>
             $(function () {
-                $('.flexslider').flexslider({
+                $('#flexslider').flexslider({
                     animation: "slide"
                 });
             });
         </script>
     </head>
     <body>
-        <div class="flexslider">
+        <div class="flexslider" id='flexslider'>
             <ul class="slides">
                 <?php
                 include_once 'include/load_slider_element.php';

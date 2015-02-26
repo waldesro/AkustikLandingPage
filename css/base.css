@@ -36,22 +36,24 @@ body {
     
     height:auto !important;
     margin:0 auto -54px;
-    min-height:100%;
-    min-width:940px;
+    //min-height:100%;
+    //min-width:950px;
     top:0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin-top: 0px;   
-    margin:-192px auto 0;
+    //margin-top: 0px;   
+    //margin:-192px auto 0;
+    //display: inline-flex;
 }
 
 #viewer {
-    margin-left: 20%;
-    margin-top: 345px;
-    margin-right: 20%;
+    margin:150px auto 0;
+    //margin-left: 10%;
+    //margin-top: 150px;
+    //margin-right: 10%;
     max-width: 900px;
-    width: 60%;
+    width: 900px;
     height: auto !important;
     background-color: white;
     border:1px solid transparent;
@@ -62,6 +64,24 @@ body {
     clear: both;
 }
 
+#footer {
+    color:#1E90FF;
+    float:left;
+    width:100%;
+    height: auto;
+}
+
+#disclaimer {
+    margin:auto auto 0;
+    //margin-left: 10%;
+    //margin-top: 150px;
+    //margin-right: 10%;
+    text-align: center;
+    max-width: 900px;
+    width: 900px;
+    height: auto !important;
+}
+
 #Ingenieria {
     background:none;
     margin-top:10px;
@@ -69,13 +89,6 @@ body {
     margin-bottom:10px;
     width:100%;
 }
-
-.teach {
-    //float: left;
-    padding-left: 10px;
-    width: 100%;
-}
-
 
 .photo {
     border:0;

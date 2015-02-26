@@ -8,15 +8,21 @@
         </style>
         <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="js/modernizr.custom.js"></script>
-        <script src="js/grid.js"></script>
-        <script>
+        <script src="js/jquery.grid.thumbnail.js"></script>
+        <script type="text/javascript">
             $(function () {
                 $("#accordion").accordion({
                     event: "click hoverintent",
                     heightStyle: "content"
                 });
-                Grid.init();
+                initGrids();               
             });
+
+            function initGrids() {
+                $("#og-grid1").thumbnail();
+                $("#og-grid2").thumbnail();
+            };
+
             $.event.special.hoverintent = {
                 setup: function () {
                     $(this).bind("mouseover", jQuery.event.special.hoverintent.handler);
@@ -82,7 +88,7 @@
     </head>
     <body>
         <div id="accordion">
-            <h3 class="s1">Levantamiento / Modelaje Acústicos</h3>
+            <h3 class="s1">Levantamiento / Modelajes Acústicos</h3>
             <div class="text-accordion">
                 <p>
                     Nuestro departamento de Integración de Audio y Video, recopila la información suficiente para realizar una simulación del 
@@ -91,7 +97,7 @@
                     con caídas de sonido. 
                 </p>
                 <div class="main">
-                    <ul id="og-grid" class="og-grid">
+                    <ul id="og-grid1" class="og-grid">
                         <li>
                             <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
                                 <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
@@ -108,23 +114,23 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/auditioner_playback_system/page.html')" data-largesrc="img/hacemos/modelaje/04.jpg" data-title="Bose Auditioner®" data-description='Bose Auditioner system technology permite al diseñador del sistema, consultor acústico y cliente, "pasear dentro" del modelo y experimentar con precisión el rendimiento del sistema de sonido propuesto. El sistema de reproducción Auditioner patentado, utiliza una disposición específica de los altavoces de campo cercano y procesamiento de señales patentado, para ofrecer con precision ondas de sonido a los oídos de los oyentes, por lo que se puede escuchar el sonido como lo harían en el lugar real. Tecnología Auditioner está habilitado con el software Bose® Modeler® Plus.'>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/auditioner_playback_system/page.html')" data-largesrc="img/hacemos/modelaje/04.jpg" data-title="Bose Auditioner®" data-description='La implementacion de esta tecnologia, brinda a nuestros clientes la alternativa de poder escuchar la solucion final planteada mucho antes de realizar la inversion. De esta forma se garantiza que la solucion planteada cumple con las espectativas. De la mano de nuestros Ingenieros, se ralizan las modificaciones al modelo hasta alcanzar la calidad requerida.'>
                                 <img src="img/hacemos/modelaje/04.jpg" alt="Bose Auditioner®"/>
                             </a>
                         </li>
-                        
+
                         <li>
-                            <a href="img/hacemos/modelaje/05.jpg" data-largesrc="img/hacemos/modelaje/05.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <a href="javascript:void(0)" data-click="open_win('http://www.sketchup.com/es/products/sketchup-pro')" data-largesrc="img/hacemos/modelaje/05.jpg" data-title="Arquitectura" data-description="Trabajamos con Arquitectos y software de diseño de arquitectura, para diseñar modelos semejantes a las areas de interes. De esta forma grarantizamos, en todo momento, la calidad y fidelidad de nuestras propuestas.">
                                 <img src="img/hacemos/modelaje/05.jpg" alt="Modeler"/>
                             </a>
                         </li>
                         <li>
-                            <a href="img/hacemos/modelaje/06.jpg" data-largesrc="img/hacemos/modelaje/06.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <a href="javascript:void(0)" data-click="open_win('http://www.autodesk.es/products/autocad/overview')" data-largesrc="img/hacemos/modelaje/06.jpg" data-title="Modelado Arquitectónico" data-description="Trabajamos con Arquitectos y software de diseño de arquitectura, para diseñar modelos semejantes a las areas de interes. De esta forma grarantizamos, en todo momento, la calidad y fidelidad de nuestras propuestas.">
                                 <img src="img/hacemos/modelaje/06.jpg" alt="Modeler"/>
                             </a>
                         </li>
                         <li>
-                            <a href="img/hacemos/modelaje/07.jpg" data-largesrc="img/hacemos/modelaje/07.jpg" data-title="Bose Modeler" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <a href="javascript:void(0)" data-click="open_win('img/hacemos/modelaje/07.jpg')" data-largesrc="img/hacemos/modelaje/07.jpg" data-title="Levantamiento" data-description="Nuestros asesores, les visitaran para recopilar los datos necesarios y realizar los modelos computarizados. Podemos trabajar sobre planos existentes del area o diseños realizados con softwares de diseños arquitectonicos">
                                 <img src="img/hacemos/modelaje/07.jpg" alt="Modeler"/>
                             </a>
                         </li>                      
@@ -132,14 +138,57 @@
                 </div>
             </div>
 
-            <h3 class="s2">Altavoces y Sistemas Lineales</h3>
+            <h3 class="s2">Altavoces, Sistemas Lineales</h3>
             <div class="text-accordion">
                 <p>
                     La mejor alternativa para lugares con acústica incontrolables como lo son iglesias,
                     estos sistemas permiten un resultado sorprendentemente eficaz, que reproduce la voz
                     de forma clara e inteligible. 
                 </p>
-
+                <div class="main">
+                    <ul id="og-grid2" class="og-grid">
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-click="open_win('http://worldwide.bose.com/pro/en_us/web/modeler_software/page.html')" data-largesrc="img/hacemos/modelaje/01.jpg" data-title="Bose Modeler®" data-description="Bose® Modeler Software System, es un programa de diseño y análisis acústico para los diseñadores de sistemas de sonido o consultores acústicos. Utilizando un modelo 3D computarizado, del espacio acústico y algoritmos acústicos de avanzada, Modeler puede predecir el rendimiento de un sistema de sonido. El primer software de sistema de sonido para ofrecer la predicción completa STI, Modeler ha sido un líder en la predicción del rendimiento del sistema de sonido durante más de 25 años.">
+                                <img src="img/hacemos/modelaje/01.jpg" alt="Bose Modeler®"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <h3 class="s3">Microfonía y Sistemas de Votación</h3>
