@@ -1,10 +1,11 @@
 <html>
     <head>
-        <title>Contactenos</title>
-        <style>
+        <style type="text/css">
             @import "css/webformp.css";
         </style>
+
         <script src="js/webform.js"></script>
+
         <script>
             $(function () {
                 $("#nombre").on("input", function () {
@@ -16,7 +17,7 @@
                 $("#correo").on("input", function () {
                     check_required_email("correo");
                 });
-                $("#informacion_submit button").click(function (event) {
+                $("#enviar").click(function (event) {
                     check_required_input_form("informacion", "contactenos", event);
                 });
             });

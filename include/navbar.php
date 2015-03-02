@@ -2,7 +2,7 @@
     <div class="container">
         <!--<div class="imagenlogo"></div>-->
         <ul class="nav navbar-right">
-            <li><a title="Principal" href="javascript:void(0)" onclick="mostrar_contenido('#viewer', 'main.php')">Principal</a></li>
+            <li><a title="Inicio" href="javascript:void(0)" onclick="mostrar_contenido('#viewer', 'main.php')">Inicio</a></li>
             <li><a title="Que Hacemos" href="javascript:void(0)" onclick="mostrar_contenido('#viewer', 'que_hacemos.php')">Qué Hacemos</a></li>
             <li><a title="Nuestros Clientes" href="#">Nuestros Clientes</a></li>
             <li><a title="Nuestras Marcas" href="#">Nuestras Marcas</a></li>

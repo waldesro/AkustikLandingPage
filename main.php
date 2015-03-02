@@ -13,12 +13,14 @@
         </script>
     </head>
     <body>
-        <div class="flexslider" id='flexslider'>
-            <ul class="slides">
-                <?php
-                include_once 'include/load_slider_element.php';
-                ?>
-            </ul>
+        <div class="imagenes">
+            <div class="flexslider" id='flexslider'>
+                <ul class="slides">
+                    <?php
+                    include_once 'include/load_slider_element.php';
+                    ?>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

@@ -23,10 +23,7 @@ video {
 }
 
 body {
-    font: 14px/normal Tahoma, Arial, Helvetica, sans-serif;
-    //background-image: url('../img/background.jpg');
-    //background-repeat: repeat;
-    //background-size: cover;
+    font: 14px/normal Arial;
     margin: 0;
     background-color: whitesmoke;
 }
@@ -48,7 +45,7 @@ body {
 }
 
 #viewer {
-    margin:150px auto 0;
+    margin:155px auto 0;
     //margin-left: 10%;
     //margin-top: 150px;
     //margin-right: 10%;
@@ -57,7 +54,8 @@ body {
     height: auto !important;
     background-color: white;
     border:1px solid transparent;
-    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 3px 4px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 3px 3px;
+    box-shadow:rgba(0, 0, 0, 0.247059) 0 3px 3px;
 }
 
 .separador {
@@ -68,7 +66,39 @@ body {
     color:#1E90FF;
     float:left;
     width:100%;
-    height: auto;
+    height: 100%;
+    border:1px solid transparent;
+    border-color:#D0D0D0;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0px -1px 3px 1px;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 3px 1px;
+    vertical-align:baseline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url('../img/data.png');
+    background-repeat: no-repeat;
+    background-position: 0px 75%;
+    margin-top: 7px;
+    
+}
+
+#logo-footer {
+    background-image: url('../img/logo-bansbach-maps.png');
+    float:right;
+    height:55px;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-top:-17px;
+    margin-bottom: 5px;
+    position: relative;
+    width:130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagenes{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 #disclaimer {
@@ -80,6 +110,8 @@ body {
     max-width: 900px;
     width: 900px;
     height: auto !important;
+    font-size:13px;
+    text-align:left;
 }
 
 #Ingenieria {
@@ -99,7 +131,7 @@ body {
     height: 40px;
     float: left;
 }
-
+/*
 .header {
     border-width:0 0 1px;
     top:0;
@@ -111,7 +143,7 @@ body {
     z-index:400;
     height: 200px;
 }
-
+*/
 .title {
     font-size:24px;
     margin-left:120px;

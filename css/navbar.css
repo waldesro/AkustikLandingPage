@@ -35,20 +35,21 @@
 }
 
 .container {
+    margin:1px auto 0;
     padding-left:0;
     padding-right:0;
-    position:fixed;
-    width:100%;
+    //position:fixed;
+    width:900px;
     height: 40px;
-    margin-left:auto;
-    margin-right:auto;
+    //margin-left:auto;
+    //margin-right:auto;
     margin-bottom: 0px;
     min-width: 700px;
 }
 
 .nav {
     list-style:none;
-    margin-bottom:0;
+    margin-bottom:5;
     padding-left:0;
     margin:2.5px -10px;
 }
@@ -70,29 +71,22 @@
     color:#1E90FF;//#777777;
     font-size: 18px;
     text-decoration:none;
+    text-height: auto;
+    font-weight: bold;
     background:0 0;
 }
 .nav > li > a:hover, .nav > li > a:focus {
     border:1px solid transparent;
     border-color:#D0D0D0;
-    box-shadow:rgba(0, 0, 0, 0.247059) 0 2px 3px;
-    background-color: #D0D0D0;
+    box-shadow:rgba(0, 0, 0, 0.247059) 0 4px 5px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 4px 5px;
+    background-color: #F0F0F0;
+    color: #1E90FF;
 }
 .nav > li.disabled > a {
     color:#F0FFFF;//#777777;
 }
-.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-    background-color:transparent;
-    color:#1E90FF;//#777777;
-    cursor:not-allowed;
-    text-decoration:none;
 
-}
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    color: white;
-    background-color: #1E90FF;
-    text-decoration:none;
-}
 .nav .nav-divider {
     background-color:#E5E5E5;
     height:1px;
@@ -113,6 +107,7 @@
     background-image: url('../img/logo.jpg');
     background-repeat: no-repeat;
     box-shadow:rgba(0, 0, 0, 0.247059) 0 2px 3px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 2px 3px;
     border:1px solid transparent;
 }
 .nav-titulo{
@@ -125,7 +120,8 @@
     background-repeat: no-repeat;
     background-size: auto;
     //-webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 2px 3px;
-    box-shadow:rgba(0, 0, 0, 0.247059) 0 1px 1px;
+    box-shadow:rgba(0, 0, 0, 0.247059) 0 2px 3px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 2px 3px;
     //border:1px solid transparent;
     margin-bottom:0px;
     min-height:50px;
@@ -136,8 +132,8 @@
 
 .nav-contacto {
     text-align: left;
-    border:1px solid transparent;
-    border-color:#D0D0D0;
+    //border:1px solid transparent;
+    //border-color:#D0D0D0;
     background: transparent;//linear-gradient(#f6f6f6 20%, #D8D8D8 80%);
     width: 250px;
     height: 90px;  

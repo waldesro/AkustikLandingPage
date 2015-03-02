@@ -1,114 +1,100 @@
-.webform {
-    min-width: 200px;
+.web-form {
+    border:1px solid transparent;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.247059) 0 3px 4px;
+    box-shadow:rgba(0, 0, 0, 0.247059) 0 3px 4px;
+    border-color:#D0D0D0;
+    height: 100%;
+    width: 400px;
+    background-color: #E5E5E5;
+    padding: 10px;
+    margin:10px auto 0;
+    margin-bottom: 10px;
 }
 
-.informacion {
-    text-align: left;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px #888888;
-    background: linear-gradient(black 20%, #D8D8D8 80%);
-    width: 50%;
-    height: 100%;  
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 10px;
-    padding: 20px;
-    float: left;
-    position: relative;
-}
-
-.contacto {
-    text-align: left;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px #888888;
-    //background: linear-gradient(#f6f6f6 20%, #D8D8D8 80%);
-    width: 50%;
-    height: 100%;  
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 5px;
-    padding: 5px;
-    float: left;
-    position: relative;
-    text-align: center;
-}
-
-#contacto_titulo {
-    color: #1E90FF;
-    font-size: 24px;
-    text-decoration:none;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-.contact_table {
+.web-form > form > div {
+    height: 100%;
     width: 100%;
-    height: 50px;
+    padding-bottom: 10px;
 }
 
-.contact_telefono {
-    color: whitesmoke;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: left;
+.web-form > form > div > input{
+    width: 100%;
 }
 
-.col_flag {
-    width: 30%;
-    height: 20px;
-    vertical-align: central;
+.web-form > form > div > textarea{
+    width: 100%;
+    height: 150px;
 }
 
-.col_telefono {
-    width: 70%;
-    height: 20px;
+.web-form > form > div > label{
+    width: 80px;
 }
 
-.contact_flag {
-    max-width: 30%;
-    width: 30%;
-    height: auto;
-    float: right;
-}
-
-.informacion > label {
-    color: white;
-    display: inline-block;
-    width: 55px;
-}
-
-.informacion > input {
-    width:100%;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-.informacion > p {
-    color: #1E90FF;
+.web-form > form > div > p{
+    width: 100%;
     text-align: justify;
 }
 
-.informacion > textarea {
+.div-button {
+    text-align: center;
+} 
+
+.contacto {
+    text-align: left;
+    background: transparent;//linear-gradient(#f6f6f6 20%, #D8D8D8 80%);
     width: 100%;
-    height: 100px;
-    vertical-align: top;
+    height: 100%;  
+    margin-left: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border:1px solid transparent;
+    border-color:#D0D0D0;
+    padding: 10px;
 }
 
-.informacion > button {
-    position: relative;
-    //left: 85%;
-    float: bottom;
-    //padding-right: 10px;
+.contacto > p {
+    color:#1E90FF;
+    font-size: 18px;
+    text-decoration:none;
+    margin-top: 2px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
-.informacion > div{
-    margin-top: 5px;
-    width: 100%;
+.contacto-table {
+    width: 250px;
+    height: 50px;
+    margin:5px auto 0;
+}
+
+.contacto-telefono {
+    color: #1E90FF;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.columna-flag {
+    width: 20%;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.columna-telefono {
+    width: 70%;
+    height: 20px;
+    text-align: center;
+}
+
+.contacto-flag {
+    width: 25px;
+    height: 25px;
+    float: inside;
 }
 
 input.invalid, textarea.invalid{
     border: 2px solid red;
 }
- 
+
 input.valid, textarea.valid{
     border: 2px solid green;
 }
@@ -117,7 +103,7 @@ input.valid, textarea.valid{
     display: none;
     margin-left: 10px;
 }      
- 
+
 .error_show{
     color: red;
     margin-left: 10px;
